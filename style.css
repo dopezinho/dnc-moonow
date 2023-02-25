@@ -21,31 +21,154 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-/*  mensagens  */
+/* csszin  */
 
-.message{
+body {
+    background: #000;
+}
+
+/*  header  */
+
+.logo {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+}
+
+.li {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.li a {
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 32px;
+    text-transform: uppercase;
+}
+
+.li a:nth-child(3) {
+    margin-right: 111px;
+}
+
+/*  main  */
+
+main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box h3 {
+    color: #9F7FDBCC;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 50px;
+    margin: 50px;
+    max-width: 90%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 45px;
+    width: 60%;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 45px;
+    width: 60%;
+}
+
+.name input {
+    background: #9F7FDB;
+    border: transparent;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+    padding: 20px 60px;
+    width: 100%;
+}
+
+.name input::placeholder{
+    color: #fff;
+    font-weight: 500;
+}
+
+.email input{
+    background-color: #9F7FDB;
+    border: transparent;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+    padding: 20px 60px;
+    width: 100%;
+}
+
+.email input::placeholder{
+    color: #fff;
+    font-weight: 500;
+}
+
+#send {
+    background: #7834F3;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    padding: 20px 30px;
+}
+
+#more {
+    background: #9F7FDB;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    padding: 20px 30px;
+}
+
+.message {
     width: 100%;
     position: relative;
     margin-bottom: 60px;
     display: flex;
     justify-content: center;
 }
-.message .success{
+
+.message .success {
     font-size: 20px;
-    color: green;
+    color: #008000;
     position: absolute;
     animation: buttons .3s linear;
     display: none;
 }
-.message .danger{
+
+.message .danger {
     font-size: 20px;
-    color: red;
+    color: #ff0000;
     position: absolute;
     transition: .3s;
     animation: buttons .3s linear;
     display: none;
 }
-@keyframes buttons{
+
+@keyframes buttons {
     0%{
         transform: scale(0.1);
     }
@@ -55,38 +178,5 @@ time, mark, audio, video {
     100%{
         transform: scale(1);
     }
-}
-
-/* csszin  */
-
-/*  header  */
-
-.logo {
-    position: absolute;
-}
-
-.li {
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 10px;
-}
-
-.li a {
-    font-size: 20px;
-    margin: 32px;
-    text-transform: uppercase;
-}
-
-.li a:nth-child(3) {
-    margin-right: 111px;
-}
-
-/*  main {} */
-
-main {
-    align-items: center;
-    display: flex;
-    justify-content: center;
 }
 
